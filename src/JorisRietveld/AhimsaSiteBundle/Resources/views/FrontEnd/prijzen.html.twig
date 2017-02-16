@@ -1,0 +1,89 @@
+{# twig template file
+ # Author: Joris Rietveld <jorisrietveld@gmail.com>
+ # Created: 07-21-2016 14:09
+ #}
+{%  extends 'SiteBundle::AhismaTheme.html.twig' %}
+
+{% block pageContent %}
+    <h1>Prijzen</h1>
+
+    <table class="table">
+        <thead>
+        <tr><th colspan="3">Prijzen Appartement</th> </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="col-lg-3">2 persoons</td>
+            <td class="col-lg-3">&euro; 50,00</td>
+            <td class="col-lg-3">Per nacht</td>
+        </tr>
+        <tr>
+            <td class="col-lg-3">Groep maximaal 6 persoons</td>
+            <td class="col-lg-3">&euro; 15,00</td>
+            <td class="col-lg-3">Per persoon per nacht</td>
+        </tr>
+        <tr>
+            <td class="col-lg-3">2 persoones</td>
+            <td class="col-lg-3">&euro; 250,00</td>
+            <td class="col-lg-3">Per week</td>
+        </tr>
+        <tr>
+            <td class="col-lg-3">Groep maximaal 6 persoons</td>
+            <td class="col-lg-3">&euro; 350,00</td>
+            <td class="col-lg-3">Per week</td>
+        </tr>
+        <tr>
+            <td class="col-lg-3">Borg</td>
+            <td class="col-lg-3">&euro; 75,00</td>
+            <td class="col-lg-3"></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <table class="table">
+        <thead>
+        <tr><th colspan="3">Prijzen camping</th> </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="col-lg-3">Tent/Camper/Caraven inclusief 2 personen</td>
+            <td class="col-lg-3">&euro; 15,00</td>
+            <td class="col-lg-3">Per nacht</td>
+        </tr>
+        <tr>
+            <td class="col-lg-3">Extra volwassene</td>
+            <td class="col-lg-3">&euro; 5,00</td>
+            <td class="col-lg-3">Per nacht</td>
+        </tr>
+        <tr>
+            <td class="col-lg-3">Extra kind</td>
+            <td class="col-lg-3">&euro; 2,50</td>
+            <td class="col-lg-3">Per nacht</td>
+        </tr>
+        <tr>
+            <td class="col-lg-3">Huisdier</td>
+            <td class="col-lg-3">Inclusief</td>
+            <td class="col-lg-3"></td>
+        </tr>
+        <tr>
+            <td class="col-lg-3">Electriciteit( 6A )</td>
+            <td class="col-lg-3">inclusief</td>
+            <td class="col-lg-3"></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <table class="table">
+        <thead>
+        <tr><th colspan="3">Prijs mee eten</th> </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="col-lg-3">Mee eten inclusief drinken</td>
+            <td class="col-lg-3">&euro; 18,00</td>
+            <td class="col-lg-3">Per persoon</td>
+        </tr>
+
+        </tbody>
+    </table>
+{% endblock%}

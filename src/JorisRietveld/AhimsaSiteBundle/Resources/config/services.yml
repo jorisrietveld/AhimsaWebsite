@@ -1,0 +1,4 @@
+services:
+#    joris_rietveld_ahimsa_site.example:
+#        class: JorisRietveld\AhimsaSiteBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

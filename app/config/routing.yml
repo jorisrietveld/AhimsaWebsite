@@ -1,0 +1,3 @@
+joris_rietveld_ahimsa_site:
+    resource: "@JorisRietveldAhimsaSiteBundle/Resources/config/routing.yml"
+    prefix:   /

@@ -1,0 +1,40 @@
+fos_js_routing:
+    resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
+
+joris_rietveld_ahimsa_site_homepage:
+    path:     /
+    defaults: { _controller: JorisRietveldAhimsaSiteBundle:FrontEnd:index }
+
+joris_rietveld_ahimsa_site_appartament:
+    path:     /appartament
+    defaults: { _controller: JorisRietveldAhimsaSiteBundle:FrontEnd:index }
+
+joris_rietveld_ahimsa_site_camping:
+    path:     /camping
+    defaults: { _controller: JorisRietveldAhimsaSiteBundle:FrontEnd:index }
+
+joris_rietveld_ahimsa_site_contact-en-boeken:
+    path:     /contact-en-boeken
+    defaults: { _controller: JorisRietveldAhimsaSiteBundle:FrontEnd:index }
+
+joris_rietveld_ahimsa_site_joris:
+    path:     /kees-bij-joris
+    defaults: { _controller: JorisRietveldAhimsaSiteBundle:FrontEnd:index }
+
+joris_rietveld_ahimsa_site_de-omgeving:
+    path:     /de-omgeving
+    defaults: { _controller: JorisRietveldAhimsaSiteBundle:FrontEnd:index }
+
+joris_rietveld_ahimsa_site_fotos:
+    path:     /fotos
+    defaults: { _controller: JorisRietveldAhimsaSiteBundle:FrontEnd:index }
+
+joris_rietveld_ahimsa_site_recencies:
+    path:     /recencies
+    defaults: { _controller: JorisRietveldAhimsaSiteBundle:FrontEnd:index }
+
+route_dispacher:
+    path:     /dispath/{template}
+    defaults: { _controller: JorisRietveldAhimsaSiteBundle:FrontEnd:dispatch }
+    options:
+        expose: true

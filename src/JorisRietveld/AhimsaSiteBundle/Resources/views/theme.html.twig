@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}Ahimsa - Kees Kok{% endblock %}</title>
+    {% block stylesheets %}{% endblock %}
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+</head>
+<body>
+{% block body %}
+    {% block welcomeMessage %}{% endblock %}
+{% endblock %}
+
+{% javascripts '@JorisRietveldAhimsaSiteBundle/Resources/public/thirdparty/angular/angular.min.js'
+    '@JorisRietveldAhimsaSiteBundle/Resources/public/thirdparty/angular-bootstrap/ui-bootstrap.min.js'
+    '@JorisRietveldAhimsaSiteBundle/Resources/public/js/*' %}
+<script src="{{ asset_url }}"></script>
+{% endjavascripts %}
+
+{% block javascript %}
+    <script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
+    <script src="/js/fos_js_routes.js"></script>
+    {#<script src="{{ path('fos_js_routing_js', { callback: 'fos.Router.setData' }) }}"></script>#}
+    <script src="{{ asset('assets/vendor/angular/angular.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/angular-bootstrap/ui-bootstrap.min.js') }}"></script>
+{% endblock %}
+</body>
+</html>
